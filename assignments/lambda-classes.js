@@ -40,8 +40,8 @@ class Student extends Person {
     this.favSubjects = obj.favSubjects;
     this.grade = obj.grade;
   }
-  listsSubjects(arrSubjects) {
-    arrSubjects.forEach(subject => console.log(subject));
+  listsSubjects() {
+    this.favSubjects.forEach(subject => console.log(subject));
   }
 
   PRAssignment(subject) {
@@ -125,4 +125,5 @@ justin.changeGrade(mark);
 console.log(mark);
 mark.speak();
 mark.sprintChallenge("javascript");
+mark.listsSubjects();
 mark.graduate();
